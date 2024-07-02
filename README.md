@@ -40,8 +40,7 @@ Enabled customization of voice, response behavior, and command processing based 
 Python  
 OpenAI API   
 pyttsx3 (Text-to-Speech)   
-speech_recognition (Speech-to-Text)    
-Tkinter (GUI)   
+speech_recognition (Speech-to-Text)      
 Various RESTful APIs for additional functionalities
 
 # Outcome:

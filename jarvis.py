@@ -9,7 +9,7 @@ import numpy as np
 
 
 chatStr = ""
-# https://youtu.be/Z3ZAJoi4x6Q
+
 def chat(query):
     global chatStr
     print(chatStr)
@@ -24,7 +24,7 @@ def chat(query):
         frequency_penalty=0,
         presence_penalty=0
     )
-    # todo: Wrap this inside of a  try catch block
+
     say(response["choices"][0]["text"])
     chatStr += f"{response['choices'][0]['text']}\n"
     return response["choices"][0]["text"]
@@ -43,7 +43,7 @@ def ai(prompt):
         frequency_penalty=0,
         presence_penalty=0
     )
-    # todo: Wrap this inside of a  try catch block
+ 
     # print(response["choices"][0]["text"])
     text += response["choices"][0]["text"]
     if not os.path.exists("Openai"):
@@ -81,7 +81,7 @@ if __name__ == '__main__':
             if f"Open {site[0]}".lower() in query.lower():
                 say(f"Opening {site[0]} sir...")
                 webbrowser.open(site[1])
-        # todo: Add a feature to play a specific song
+       
         if "open music" in query:
             musicPath = "/Users/harry/Downloads/downfall-21371.mp3"
             os.system(f"open {musicPath}")
